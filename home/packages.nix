@@ -60,7 +60,6 @@
       weechat
       wkhtmltopdf
       xournalpp
-      xwayland-satellite
       yt-dlp
       zulu
 

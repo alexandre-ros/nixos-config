@@ -64,6 +64,12 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 // Cursor theme
 cursor {
     xcursor-theme "Bibata-Modern-Ice"
