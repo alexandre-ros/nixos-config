@@ -26,6 +26,7 @@
       element-desktop
       erlang
       exercism
+      ffmpeg
       gcc16
       gimp
       git
@@ -42,6 +43,7 @@
       nixos-icons
       openssl
       picard
+      playerctl
       qbittorrent
       qemu
       qusb2snes

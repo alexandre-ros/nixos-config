@@ -2,14 +2,10 @@
 
 {
   imports = [
+    ./niri.nix
     ./noctalia.nix
   ];
   
-  # Niri + Noctalia
-  xdg.configFile = {
-    "niri/config.kdl".source = ./niri-config.kdl;
-  };
-
   # Some backgrounds
   home.file."Pictures/Wallpapers/disco.png".source = pkgs.fetchurl {
     url = "https://i.redd.it/43a0onoy326h1.png";

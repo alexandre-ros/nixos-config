@@ -142,6 +142,7 @@ in
         "browser.newtabpage.activity-stream.newtabWallpapers.wallpaper" = "dark-mountain";
         "browser.newtabpage.activity-stream.showSearch" = false;
         "browser.newtabpage.activity-stream.showWeather" = false;
+        "browser.tabs.inTitlebar" = 0;
        	"browser.toolbars.bookmarks.visibility" = "never";
       };
     };
