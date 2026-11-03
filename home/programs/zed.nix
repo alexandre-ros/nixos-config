@@ -50,8 +50,8 @@
         };
         theme = {
           mode  = "system";
-          dark  = "Tokyo Night";
-          light = "Catppuccin Latte";
+          dark  = "Noctalia Dark";
+          light = "Noctalia Light";
         };
         icon_theme = {
           mode  = "system";

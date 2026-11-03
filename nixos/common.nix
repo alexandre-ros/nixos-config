@@ -36,10 +36,39 @@
 
   # Display Manager and Niri 
   programs.niri.enable = true;
-  services.displayManager.sddm = {
+  services.xserver.enable = true;
+  services.xserver.displayManager.lightdm = {
     enable = true;
-    theme = "sddm-astronaut";
-    wayland.enable = true;
+    background = "${pkgs.pantheon.elementary-wallpapers}/share/backgrounds/Morskie Oko.jpg";
+    greeters.slick = {
+      enable = true;
+      font = {
+        package = pkgs.ubuntu-classic;
+        name = "Ubuntu 11";
+      };
+      theme = {
+        package = pkgs.yaru-theme;
+        name = "Yaru-dark";
+      };
+      iconTheme = {
+        package = pkgs.yaru-theme;
+        name = "Yaru";
+      };
+      cursorTheme = {
+        package = pkgs.yaru-theme;
+        name = "Yaru";
+      };
+      draw-user-backgrounds = false;
+      extraConfig = ''
+        background-color=#2C001E
+        show-hostname=true
+        show-a11y=true
+        show-keyboard=true
+        show-power=true
+        show-clock=false
+        xft-antialias=true
+      '';
+    };
   };
 
   # Networking and Bluetooth
@@ -127,7 +156,7 @@
 
   # gnome-keyring
   services.gnome.gnome-keyring.enable = true;
-  security.pam.services.greetd.enableGnomeKeyring = true;
+  security.pam.services.lightdm.enableGnomeKeyring = true;
 
   # Disable root login
   users.users.root.hashedPassword = "!";

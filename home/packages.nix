@@ -50,7 +50,7 @@
       rustc
       spotdl
       swi-prolog
-      tauon
+      unstablePkgs.tauon
       telegram-desktop
       texmaker
       tree
