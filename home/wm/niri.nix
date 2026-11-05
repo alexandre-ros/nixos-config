@@ -9,7 +9,6 @@
   wayland.windowManager.niri = {
     enable = true;
     checkConfig = true;
-    xwaylandSatellitePackage = null;
 
     # niri kdl settings
     settings = {
@@ -138,6 +137,7 @@
         "Mod+T".spawn = "alacritty";
         "Mod+Return".spawn-sh = "niri msg action set-column-width \"66.67%\" && exec alacritty";
         "Mod+Shift+Q".spawn = "shutdown now";
+        "Mod+Shift+S".screenshot = {};
         
         # Volume keys
         XF86AudioRaiseVolume = {

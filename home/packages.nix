@@ -38,6 +38,7 @@
       lua5_5_compat
       lynx
       mullvad-vpn
+      neovim
       newsboat
       nitch
       nixos-icons

@@ -60,7 +60,8 @@
         };
         profiles.Uiua.settings = {
           buffer_font_family = "Uiua386";
-          buffer_font_size   = 18;
+          buffer_font_size   = fontsize.txt + 5;
+          terminal.font_size = fontsize.txt + 5;
           autosave           = "off";
         };
       };
