@@ -7,6 +7,7 @@
     ./programs/gtk-qt.nix
     ./programs/mozilla.nix
     ./programs/mpv.nix
+    ./programs/neovim.nix
     ./programs/retroarch.nix
     ./programs/shell.nix
     ./programs/starship.nix

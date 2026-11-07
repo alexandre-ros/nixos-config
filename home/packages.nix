@@ -1,4 +1,4 @@
-{ pkgs, unstablePkgs, ...}: 
+{ pkgs, unstablePkgs, ...}:
 
 {
   # Default flags for special packages
@@ -10,7 +10,7 @@
     terminal = false;
     categories = [ "Game" "Emulator" ];
   };
-  
+
   # User packages
   home.packages = with pkgs;
     [
@@ -38,7 +38,6 @@
       lua5_5_compat
       lynx
       mullvad-vpn
-      neovim
       newsboat
       nitch
       nixos-icons
@@ -51,12 +50,11 @@
       rustc
       spotdl
       swi-prolog
-      unstablePkgs.tauon
       telegram-desktop
       texmaker
       tree
       unstablePkgs.anki-bin
-      unstablePkgs.tutanota-desktop
+      unstablePkgs.tauon
       unstablePkgs.uiua-unstable
       unzip
       virt-viewer
@@ -91,6 +89,14 @@
           rich
         ]
       ))
+
+      # R packages and rstudio
+      (unstablePkgs.rstudioWrapper.override {
+        packages = with unstablePkgs.rPackages; [
+          arrow
+          tidyverse
+        ];
+      })
 
       # Haskell packages
       haskellPackages.cabal-install
