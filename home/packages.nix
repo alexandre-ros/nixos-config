@@ -43,6 +43,9 @@
       nixos-icons
       openssl
       picard
+      pkgs-unstable.anki-bin
+      pkgs-unstable.tauon
+      pkgs-unstable.uiua-unstable
       playerctl
       qbittorrent
       qemu
@@ -53,10 +56,6 @@
       telegram-desktop
       texmaker
       tree
-      pkgs-unstable._2ship2harkinian
-      pkgs-unstable.anki-bin
-      pkgs-unstable.tauon
-      pkgs-unstable.uiua-unstable
       unzip
       virt-viewer
       weechat
@@ -90,14 +89,6 @@
           rich
         ]
       ))
-
-      # R packages and rstudio
-      (pkgs-unstable.rstudioWrapper.override {
-        packages = with pkgs-unstable.rPackages; [
-          arrow
-          tidyverse
-        ];
-      })
 
       # Haskell packages
       haskellPackages.cabal-install
