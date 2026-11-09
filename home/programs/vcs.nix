@@ -1,10 +1,10 @@
-{ unstablePkgs, ...}:
+{ pkgs-unstable, ...}:
 
 {
   # Jujutsu VCS btw
   programs.jujutsu = {
     enable   = true;
-    package  = unstablePkgs.jujutsu;
+    package  = pkgs-unstable.jujutsu;
     settings = {
       # User settings
       user.email         = "alexandre-ros@tuta.io";

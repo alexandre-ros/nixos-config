@@ -1,4 +1,4 @@
-{ pkgs, unstablePkgs, ...}:
+{ pkgs, pkgs-unstable, ...}:
 
 {
   # Default flags for special packages
@@ -53,9 +53,10 @@
       telegram-desktop
       texmaker
       tree
-      unstablePkgs.anki-bin
-      unstablePkgs.tauon
-      unstablePkgs.uiua-unstable
+      pkgs-unstable._2ship2harkinian
+      pkgs-unstable.anki-bin
+      pkgs-unstable.tauon
+      pkgs-unstable.uiua-unstable
       unzip
       virt-viewer
       weechat
@@ -91,8 +92,8 @@
       ))
 
       # R packages and rstudio
-      (unstablePkgs.rstudioWrapper.override {
-        packages = with unstablePkgs.rPackages; [
+      (pkgs-unstable.rstudioWrapper.override {
+        packages = with pkgs-unstable.rPackages; [
           arrow
           tidyverse
         ];

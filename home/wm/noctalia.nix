@@ -1,4 +1,4 @@
-{ inputs, config, unstablePkgs, ... }: 
+{ inputs, config, pkgs-unstable, ... }: 
 
 {
   # programs.noctalia only available on HM 26.11+ (unstable)
@@ -8,7 +8,7 @@
   
   programs.noctalia = {
     enable = true;
-    package = unstablePkgs.noctalia;
+    package = pkgs-unstable.noctalia;
     checkConfig = true;
 
     settings = {

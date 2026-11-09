@@ -1,10 +1,10 @@
-{ pkgs, hostname, unstablePkgs, ...}: 
+{ pkgs, hostname, pkgs-unstable, ...}: 
 
 {
   # Zed IDE
   programs.zed-editor = {
     enable  = true;
-    package = unstablePkgs.zed-editor;
+    package = pkgs-unstable.zed-editor;
   
     extraPackages = with pkgs; [
       lua-language-server
