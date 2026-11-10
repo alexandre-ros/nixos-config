@@ -50,6 +50,7 @@
       qbittorrent
       qemu
       qusb2snes
+      rmg-wayland
       rustc
       spotdl
       swi-prolog
@@ -59,6 +60,7 @@
       unzip
       virt-viewer
       weechat
+      wineWow64Packages.stable
       wkhtmltopdf
       xournalpp
       yt-dlp
