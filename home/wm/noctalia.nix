@@ -42,9 +42,7 @@
           "blank"
           "weather"
           "volume"
-          "brightness"
           "network"
-          "bluetooth"
           "battery"
           "blank"
           "clock"
@@ -61,7 +59,7 @@
           show_labels = false;
           pill_scale = 0.9;
         };
-        date.format  = "{:%A,%e %B}";
+        date.format  = "{:%e %B %Y (%a)}";
         clock.format = "{:%H:%M %Z}";
         blank = {
           type = "spacer";
@@ -84,7 +82,7 @@
       # Themes and wallpaper
       theme = {
         builtin           = "Tokyo-Night";
-        community_palette = "Ayu Green";
+        community_palette = "Catppuccin Mocha Peach";
         mode              = "dark";
         source            = "community";
         
@@ -98,7 +96,7 @@
       # Wallpaper
       wallpaper = {
         directory    = "${config.home.homeDirectory}/Pictures/Wallpapers";
-        default.path = "${config.home.homeDirectory}/Pictures/Wallpapers/Morskie Oko.jpg";
+        default.path = "${config.home.homeDirectory}/Pictures/Wallpapers/Ashim DSilva.jpg";
       };
     };
   };
